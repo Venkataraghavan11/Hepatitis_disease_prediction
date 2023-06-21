@@ -39,7 +39,7 @@ def predict():
         list_.append(int(request.form.get('cold')))
         list_.append(int(request.form.get('Jaundice')))
 
-        model = joblib.load('model.pkl')
+        model = joblib.load('final_model.pkl')
         result = model.predict([list_])
         num = str(result).replace('[','')
         num = str(num).replace(']','')
