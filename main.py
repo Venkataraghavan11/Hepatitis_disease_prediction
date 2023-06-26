@@ -45,9 +45,9 @@ def predict():
         num = str(num).replace(']','')
         
         if num == '1':
-            return render_template('out.html',msg='High Risk')
+            return render_template('out.html',msg='Positive')
         else:
-            return render_template('out.html',msg='Low Risk')
+            return render_template('out.html',msg='Negative')
 
 if __name__ == '__main__':
     app.run(debug=True)
